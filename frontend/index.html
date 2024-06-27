@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tony Barreto - Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Tony Barreto</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-content">
+                <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>Skills in C, Python, React, HTML, CSS, Javascript, and SQL. Automotive engineer with experience in software development, result-oriented, distinguished by my ability to solve problems, and interpersonal skills. Passionate about creating digital products in the automotive industry with a positive impact on society.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <div class="project" data-modal-target="#project1">
+                    <img src="project1.jpg" alt="Project One">
+                    <h3>Swapper Exchange</h3>
+                    <p>Cryptocurrency Exchange Web Page.</p>
+                    <button class="btn" data-modal-target="#project1">View Details</button>
+                </div>
+                <div class="project" data-modal-target="#project2">
+                    <img src="project2.jpg" alt="Project Two">
+                    <h3>mTire</h3>
+                    <p>Fleet Tires Management Software</p>
+                    <button class="btn" data-modal-target="#project2">View Details</button>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <div class="skill">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-node"></i>
+                    <h3>Node.js</h3>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                </div>
+                <!-- Add more skills as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <form id="contactForm" action="http://localhost:3000/send" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Tony Barreto. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/tony-barreto/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/TonyBarretor" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="project1">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Project One</h2>
+            <p>Detailed description of Project One...</p>
+            <a href="https://github.com/yourusername/projectone" target="_blank" class="btn">View on GitHub</a>
+        </div>
+    </div>
+
+    <div class="modal" id="project2">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Project Two</h2>
+            <p>Detailed description of Project Two...</p>
+            <a href="https://github.com/yourusername/projecttwo" target="_blank" class="btn">View on GitHub</a>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
